@@ -1,4 +1,7 @@
 let num = 1;
+let num2 = 1;
+let num3 = 1;
+let num4 = 1;
 
 const mines1 = document.getElementById("mines1");
 console.log(mines1);
@@ -39,27 +42,27 @@ mines1.addEventListener("click", () => {
 });
 
 mines2.addEventListener("click", () => {
-  if (num > 1) {
-    num--;
-    count2.textContent = num;
+  if (num2 > 1) {
+    num2--;
+    count2.textContent = num2;
   } else {
     alert("You can't use this anymore! ");
   }
 });
 
 mines3.addEventListener("click", () => {
-  if (num > 1) {
-    num--;
-    count3.textContent = num;
+  if (num3 > 1) {
+    num3--;
+    count3.textContent = num3;
   } else {
     alert("You can't use this anymore! ");
   }
 });
 
 mines4.addEventListener("click", () => {
-  if (num > 1) {
-    num--;
-    count4.textContent = num;
+  if (num4 > 1) {
+    num4--;
+    count4.textContent = num4;
   } else {
     alert("You can't use this anymore! ");
   }
@@ -71,18 +74,18 @@ plus1.addEventListener("click", () => {
 });
 
 plus2.addEventListener("click", () => {
-  num++;
-  count2.innerText = num;
+  num2++;
+  count2.innerText = num2;
 });
 
 plus3.addEventListener("click", () => {
-  num++;
-  count3.innerText = num;
+  num3++;
+  count3.innerText = num3;
 });
 
 plus4.addEventListener("click", () => {
-  num++;
-  count4.innerText = num;
+  num4++;
+  count4.innerText = num4;
 });
 
 const categoryBtn1 = document.getElementById("menu-categories-btn1");
@@ -286,4 +289,6 @@ orderBtn3.addEventListener("click", () => {
 orderBtn4.addEventListener("click", () => {
   order.style.display = "block";
 });
-  
+
+
+// mines/plus
